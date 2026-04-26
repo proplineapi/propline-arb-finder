@@ -1,0 +1,27 @@
+{
+  "name": "propline-arb-finder",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Live cross-book 2-way arbitrage scanner powered by PropLine",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "propline-arb-finder": "dist/index.js"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "start": "node --import tsx/esm src/index.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "propline": "^0.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.4.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
