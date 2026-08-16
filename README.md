@@ -1,6 +1,6 @@
 # propline-arb-finder
 
-Live cross-book 2-way arbitrage scanner powered by the [PropLine API](https://prop-line.com).
+Live cross-book 2-way arbitrage scanner powered by the [PropLine API](https://prop-line.com/?ref=github).
 
 When two sportsbooks disagree on a complementary outcome — e.g. one offers Over 8.5 at +110, another offers Under 8.5 at -100 — the sum of their implied probabilities can drop below 100%. Splitting your stake across both books in proportion to those probabilities locks in a guaranteed profit, regardless of which side wins. This is "arb" or "sure betting."
 
@@ -13,7 +13,7 @@ git clone https://github.com/proplineapi/propline-arb-finder
 cd propline-arb-finder
 npm install
 
-export PROPLINE_API_KEY=...   # free key at https://prop-line.com
+export PROPLINE_API_KEY=...   # free key at https://prop-line.com/?ref=github
 npm start -- --sport baseball_mlb --bankroll 1000
 ```
 
@@ -85,6 +85,12 @@ Arbs in liquid US markets are rare and short-lived — most disappear within sec
 It's most useful as:
 - A **CLV signal**: an arb means at least one book has a softer line than its peers right now. Even if you can't place both legs, you can take the soft side as a +EV bet.
 - A **line-quality dashboard**: scan periodically, see which books drift; build intuition for where the soft money sits.
+
+## Links
+
+- Endpoints this tool uses: [`/odds` per event](https://prop-line.com/docs?ref=github#player-props) and [`/best-line`](https://prop-line.com/docs?ref=github#best-line)
+- [Odds API by sport and market](https://prop-line.com/odds-api?ref=github) — the live cross-book board per market, with graded outcomes
+- [More recipes](https://prop-line.com/recipes?ref=github) · [Pricing](https://prop-line.com/pricing?ref=github) · [Node SDK](https://www.npmjs.com/package/propline)
 
 ## License
 
