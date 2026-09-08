@@ -88,6 +88,7 @@ It's most useful as:
 
 ## Links
 
+- **Player props API** (markets, books, sports covered): [prop-line.com/player-props-api](https://prop-line.com/player-props-api?ref=github)
 - Endpoints this tool uses: [`/odds` per event](https://prop-line.com/docs?ref=github#player-props) and [`/best-line`](https://prop-line.com/docs?ref=github#best-line)
 - [Odds API by sport and market](https://prop-line.com/odds-api?ref=github) — the live cross-book board per market, with graded outcomes
 - [More recipes](https://prop-line.com/recipes?ref=github) · [Pricing](https://prop-line.com/pricing?ref=github) · [Node SDK](https://www.npmjs.com/package/propline)
